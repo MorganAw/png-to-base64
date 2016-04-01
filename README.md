@@ -17,7 +17,9 @@ A simple app to convert a png image to a base64 URI.
 
 ### Credits
 All the code was stolen from these posts:
+
 1. [Canvas method - David Walsh's Blog](https://davidwalsh.name/convert-image-data-uri-javascript)
+
 2. [Alternative method - Stackoverflow](http://stackoverflow.com/questions/32833797/convert-local-image-to-base64-string-in-javascript)
 
 **Note:** I haven't actually ran the alternative method. I tried to run the
