@@ -1,0 +1,30 @@
+{
+  "name": "png-to-base64",
+  "version": "1.0.0",
+  "description": "A simple project to convert a png to a base64 URI",
+  "main": "server.js",
+  "scripts": {
+	"start": "npm install && node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MorganCAw/png-to-base64.git"
+  },
+  "keywords": [
+    "png",
+    "base64",
+    "image",
+    "conversion"
+  ],
+  "author": "Morgan Aw",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/MorganCAw/png-to-base64/issues"
+  },
+  "homepage": "https://github.com/MorganCAw/png-to-base64#readme",
+  "private": true,
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
