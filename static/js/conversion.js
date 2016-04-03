@@ -6,7 +6,7 @@ function getDataUri(url, callback) {
     canvas.height = this.naturalHeight; // or 'height' if you want a special/scaled size
     canvas.getContext('2d').drawImage(image, 0, 0);
     // Get raw image data
-    callback(canvas.toDataURL('image/png').replace(/^data:image\/(png|jpg);base64,/, ''));
+    // callback(canvas.toDataURL('image/png').replace(/^data:image\/(png|jpg);base64,/, ''));
     // ... or get as Data URI
     callback(canvas.toDataURL('image/png'));
   };
@@ -34,5 +34,17 @@ function getDataUri(url) {
 */
 
 getDataUri('./img/image.png', function(dataUri) {
-  console.log(dataUri);
+  var title = document.createElement('h2');
+  var titletext = document.createTextNode('Data URI:');
+  title.appendChild(titletext)
+  document.body.appendChild(title);
+  var URIContainer = document.createElement('p');
+  var URItext = document.createTextNode(dataUri);
+  URIContainer.appendChild(URItext);
+  URIContainer.setAttribute(
+    'style',
+    'font-family: Courier New, monospace; width: 400px; word-wrap: break-word;'
+  );
+  document.body.appendChild(URIContainer);
+  console.log('ImageURI:', dataUri);
 });
